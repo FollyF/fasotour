@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block extra_css %}
+<style>
+body {
+    /* Fond dégradé doux et agréable pour toute la page */
+    background: linear-gradient(to right, #e0f2f7, #c1e7f0);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card-width {
+    max-width: 400px; /* La largeur maximale du formulaire sera de 400 pixels */
+    width: 100%;     /* Le formulaire prendra 100% de la largeur sur les petits écrans */
+}
+
+/* Ajustement pour le conteneur principal */
+.container.d-flex.justify-content-center.align-items-center.min-vh-100 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow p-4 login-card-width">
+        <h2 class="text-center mb-4">Connexion</h2>
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next|default:'' }}">
+
+            <div class="form-group mb-3">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Mot de passe" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block w-100">Se connecter</button>
+            <p class="mt-2 text-center">
+                <a href="{% url 'password_reset' %}">Mot de passe oublié ?</a>
+            </p>
+
+        </form>
+
+        <p class="mt-3 text-center">
+            Pas encore inscrit ? <a href="{% url 'inscription' %}">Créer un compte</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

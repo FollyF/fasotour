@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block title %}Sites touristiques{% endblock %}
+
+{% block content %}
+<style>
+    /* Styles pour la grille de cartes */
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    /* Styles pour les cartes pour les rendre de même hauteur */
+    .card-equal-height {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+        position: relative;
+        z-index: 0;
+    }
+
+    /* Styles pour l'effet de survol vers l'utilisateur */
+    .card-equal-height:hover {
+        transform: scale(1.1);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+
+    /* Ajustement de l'espacement interne du corps de la carte */
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 1.25rem;
+    }
+
+    /* Styles pour l'image */
+    .card-image {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    /* Style pour le conteneur des boutons */
+    .button-container {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: transparent;
+        border-top: none;
+        margin-top: auto;
+    }
+
+    /* Style commun pour les deux boutons */
+    .btn-custom {
+        flex: 1;
+        border-radius: 0 0 15px 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Style personnalisé pour le bouton Afficher (vert pharmacie) */
+    .btn-pharmacy-green {
+        background-color: #007F4F; /* Un vert qui rappelle celui des pharmacies */
+        color: white;
+        border: none;
+    }
+
+    .btn-danger-red {
+        background-color: #a41515; /* Un vert qui rappelle celui des pharmacies */
+        color: white;
+        border: none;
+    }
+
+    .btn-custom:hover {
+        text-decoration-color: #1b1b1b; /* Une nuance plus foncée pour le survol */
+    }
+
+</style>
+
+<div class="container my-5">
+    <h1 class="text-center mb-4"></h1>
+    <div class="card-grid">
+        {% for site in sites %}
+        <div class="card shadow-sm card-equal-height">
+            <div class="card-image">
+                {% with images=site.images.all %}
+                    {% if images %}
+                        <img src="{{ images.0.image.url }}" alt="{{ site.nom }}">
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ site.nom }}</h5>
+                <p class="card-text">
+                    {{ site.description|truncatechars:80 }}
+                </p>
+            </div>
+            <div class="button-container">
+                <a href="{% url 'detail_site' site.id %}" class="btn btn-pharmacy-green btn-custom">Afficher</a>
+                <a href="#" class="btn btn-danger-red btn-custom">Visiter</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

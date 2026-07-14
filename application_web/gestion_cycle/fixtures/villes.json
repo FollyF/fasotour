@@ -1,0 +1,16 @@
+[
+    {
+        "model": "gestion_cycle.ville",
+        "fields": {
+            "nom": "Bani",
+            "pays": "Burkina Faso",
+            "latitude": 13.71687,
+            "longitude": -0.175357,
+            "code_iso2": "BF",
+            "region": "Sahel",
+            "statut": "Commune/Département",
+            "population": 59452,
+            "population_propre": null
+        }
+    }
+]

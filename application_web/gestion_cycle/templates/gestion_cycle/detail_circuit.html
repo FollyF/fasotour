@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+<style>
+    .main-container { display: flex; height: 100vh; }
+    .menuL { width: 300px; background: #f8f9fa; padding: 20px; overflow-y: auto; box-shadow: 2px 0 5px rgba(0,0,0,0.1); }
+    .menu h2 { text-align: center; margin-bottom: 20px; color: #343a40; }
+    .day-item { margin-bottom: 15px; padding: 12px 15px; background: #e9ecef; border-radius: 8px; cursor: pointer; transition: background 0.3s ease; font-weight: 500; }
+    .day-item:hover { background: #dee2e6; }
+    .day-item.selected { background: #adb5bd; font-weight: bold; }
+    .map-container { flex: 1; position: relative; }
+    .map-header { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 1000; background: rgba(255, 255, 255, 0.9); padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-size: 1.5rem; font-weight: bold; text-align: center; }
+    .description-panel { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(255, 255, 255, 0.9); padding: 15px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); max-width: 80%; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; z-index: 1000; text-align: center; }
+    .description-panel.active { opacity: 1; visibility: visible; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="main-container">
+    <div class="menuL">
+        <h2>Programme du circuit</h2>
+        <div id="days-list">
+            {% for i in final_tour %}
+                <div class="day-item" id="menu-day-{{ forloop.counter }}" onclick="selectDay({{ forloop.counter }})">
+                    Jour {{ forloop.counter }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="map-container">
+        <h1 class="map-header" id="main-title"></h1>
+        {{ map_html|safe }}
+        <div id="description-panel" class="description-panel">
+            <p id="description-text"></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    const tour_data = {{ final_tour|safe }};
+    let selectedDay = null;
+
+    function selectDay(dayNumber) {
+        let point_data = tour_data[dayNumber - 1];
+        const name = point_data[2];
+        const description = point_data[3];
+
+        if (selectedDay !== null) {
+            document.getElementById(`menu-day-${selectedDay}`).classList.remove('selected');
+            let prevIcon = document.getElementById(`marker-icon-${selectedDay}`);
+            if (prevIcon) prevIcon.style.backgroundColor = '#0d6efd';
+        }
+
+        selectedDay = dayNumber;
+        document.getElementById(`menu-day-${selectedDay}`).classList.add('selected');
+        let newIcon = document.getElementById(`marker-icon-${selectedDay}`);
+        if (newIcon) newIcon.style.backgroundColor = '#ffc107';
+
+        document.getElementById('main-title').textContent =
+            (dayNumber === 1) ? "Jour 1 - Arrivée à l'aéroport" :
+            (dayNumber === tour_data.length) ? `Jour ${dayNumber} - Retour à l'aéroport` :
+            `Jour ${dayNumber}`;
+
+        const panel = document.getElementById('description-panel');
+        document.getElementById('description-text').innerHTML = `<b>${name}</b><br>${description}`;
+        panel.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        selectDay(1);
+    });
+</script>
+{% endblock %}

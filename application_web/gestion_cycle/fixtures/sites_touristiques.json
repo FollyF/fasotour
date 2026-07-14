@@ -1,0 +1,308 @@
+[
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 1,
+        "fields": {
+            "nom": "Cascades de Karfiguéla",
+            "ville": 6,
+            "description": "Magnifiques chutes d'eau sur la rivière Comoé, entourées d'une végétation luxuriante. C'est un lieu de détente, de pique-nique et de baignade prisé.",
+            "site_web": "ontb.bf",
+            "categorie": 1,
+            "latitude": "10.6389",
+            "longitude": "-4.7077",
+            "photo": "sites/cascades_karfiguela.jpg",
+            "tarif": "500.00",
+            "horaire": "07h00 - 18h00",
+            "contact": "Tél: +226 70 00 00 03",
+            "date_creation": "2023-01-15T10:10:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 2,
+        "fields": {
+            "nom": "Pics de Sindou",
+            "ville": 456,
+            "description": "Formations géologiques impressionnantes, ces pics de grès sculptés par l'érosion offrent un paysage spectaculaire et sont parfaits pour la randonnée.",
+            "site_web": "ontb.bf",
+            "categorie": 1,
+            "latitude": "10.6698",
+            "longitude": "-4.7554",
+            "photo": "sites/pics_sindou.jpg",
+            "tarif": "1000.00",
+            "horaire": "07h00 - 18h00",
+            "contact": "Tél: +226 70 00 00 02",
+            "date_creation": "2023-01-15T10:05:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 3,
+        "fields": {
+            "nom": "Ruines de Loropéni",
+            "ville": 3,
+            "description": "Vestiges d'une ancienne forteresse de pierre et premier site burkinabè classé au patrimoine mondial de l'UNESCO. Elles témoignent du commerce transsaharien de l'or.",
+            "site_web": "ontb.bf",
+            "categorie": 2,
+            "latitude": "10.2858",
+            "longitude": "-3.5414",
+            "photo": "sites/ruines_loropeni.jpg",
+            "tarif": "1500.00",
+            "horaire": "08h00 - 17h00",
+            "contact": "Tél: +226 70 00 00 01",
+            "date_creation": "2023-01-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 4,
+        "fields": {
+            "nom": "Cour Royale de Tiébélé",
+            "ville": 454,
+            "description": "Célèbre pour ses habitations traditionnelles Kassena ornées de fresques géométriques peintes à la main. Un exemple unique d'architecture et d'art traditionnel.",
+            "site_web": "ontb.bf",
+            "categorie": 3,
+            "latitude": "11.0827",
+            "longitude": "-0.5898",
+            "photo": "sites/Cour_Royale_Tiebele.jpg",
+            "tarif": "2500.00",
+            "horaire": "08h00 - 17h00",
+            "contact": "Tél: +226 70 00 00 04",
+            "date_creation": "2023-01-15T10:15:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 5,
+        "fields": {
+            "nom": "Mare aux hippopotames",
+            "ville": 2,
+            "description": "Classée Réserve de Biosphère de l'UNESCO, cette mare est un sanctuaire pour une importante population d'hippopotames. C'est un site d'observation de la faune sauvage très populaire.",
+            "site_web": "ontb.bf",
+            "categorie": 1,
+            "latitude": "11.2333",
+            "longitude": "-4.3333",
+            "photo": "sites/mare_hippopotame.jpg",
+            "tarif": "1000.00",
+            "horaire": "08h00 - 17h00",
+            "contact": "Tél: +226 70 00 00 05",
+            "date_creation": "2023-01-15T10:20:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 6,
+        "fields": {
+            "nom": "Dômes de Fabédougou",
+            "ville": 6,
+            "description": "Un paysage étrange et magnifique de collines de grès, formées par des millions d'années d'érosion par l'eau et le vent.",
+            "site_web": "ontb.bf",
+            "categorie": 1,
+            "latitude": "10.7420",
+            "longitude": "-4.6890",
+            "photo": "sites/domes_fabedougou.jpg",
+            "tarif": "500.00",
+            "horaire": "Accès libre",
+            "contact": "Tél: +226 70 00 00 06",
+            "date_creation": "2023-01-15T10:25:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 7,
+        "fields": {
+            "nom": "Musée National du Burkina Faso",
+            "ville": 1,
+            "description": "Principal musée du pays, il expose des collections d'art, d'artisanat et d'objets historiques représentant la richesse culturelle des différentes ethnies burkinabè.",
+            "site_web": "ontb.bf",
+            "categorie": 3,
+            "latitude": "12.3524",
+            "longitude": "-1.5218",
+            "photo": "sites/musee_national.jpg",
+            "tarif": "1000.00",
+            "horaire": "08h00 - 18h00",
+            "contact": "Tél: +226 70 00 00 07",
+            "date_creation": "2023-01-15T10:30:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 8,
+        "fields": {
+            "nom": "Grande Mosquée de Dioulassoba",
+            "ville": 2,
+            "description": "Construite en 1880 dans le style architectural soudanais-sahélien, elle est un chef-d'œuvre de l'architecture traditionnelle en terre.",
+            "site_web": "ontb.bf",
+            "categorie": 3,
+            "latitude": "11.1783",
+            "longitude": "-4.2985",
+            "photo": "sites/mosquee_bobo_dioulasso.jpg",
+            "tarif": "500.00",
+            "horaire": "08h00 - 17h00",
+            "contact": "Tél: +226 70 00 00 08",
+            "date_creation": "2023-01-15T10:35:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 9,
+        "fields": {
+            "nom": "Réserve Naturelle Intégrale de Nazinga",
+            "ville": 459,
+            "description": "L'une des plus grandes réserves d'Afrique de l'Ouest, célèbre pour sa grande population d'éléphants. On y observe également des antilopes, des buffles, des phacochères et une riche avifaune.",
+            "site_web": "ontb.bf",
+            "categorie": 1,
+            "latitude": "11.0800",
+            "longitude": "-1.5300",
+            "photo": "sites/reserve_nazinga.jpg",
+            "tarif": "5000.00",
+            "horaire": "07h00 - 18h00",
+            "contact": "Tél: +226 70 00 00 09",
+            "date_creation": "2023-01-15T10:40:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 10,
+        "fields": {
+            "nom": "Village Artisanal de Ouagadougou (VAO)",
+            "ville": 1,
+            "description": "Ce village regroupe des artisans de diverses disciplines (tissage, sculpture, maroquinerie, poterie). Un lieu idéal pour découvrir l'artisanat burkinabè et acheter des souvenirs.",
+            "site_web": "ontb.bf",
+            "categorie": 3,
+            "latitude": "12.3685",
+            "longitude": "-1.5302",
+            "photo": "sites/vao_ouagadougou.jpg",
+            "tarif": "0.00",
+            "horaire": "08h00 - 18h00",
+            "contact": "Tél: +226 70 00 00 10",
+            "date_creation": "2023-01-15T10:45:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 11,
+        "fields": {
+            "nom": "Festival panafricain du cinéma et de la télévision de Ouagadougou (FESPACO)",
+            "ville": 1,
+            "description": "Le plus grand festival de cinéma en Afrique, attirant des cinéastes et cinéphiles du monde entier. C'est une célébration du cinéma africain et de sa diaspora.",
+            "site_web": "fespaco.bf",
+            "categorie": 4,
+            "latitude": "12.3686",
+            "longitude": "-1.5306",
+            "photo": "sites/FESPACO.jpg",
+            "tarif": null,
+            "horaire": "Fin février - début mars",
+            "contact": "office@fespaco.bf",
+            "date_creation": "2023-01-15T10:50:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 12,
+        "fields": {
+            "nom": "Salon international de l'artisanat de Ouagadougou (SIAO)",
+            "ville": 1,
+            "description": "Une des plus grandes foires d'artisanat d'Afrique. Elle présente une immense variété de produits artisanaux provenant de tout le continent.",
+            "site_web": "siao.bf",
+            "categorie": 4,
+            "latitude": "12.3750",
+            "longitude": "-1.5330",
+            "photo": "sites/SIAO.jpg",
+            "tarif": null,
+            "horaire": "Fin octobre - début novembre",
+            "contact": "salonsiao@ymail.com, info@siao.bf",
+            "date_creation": "2023-01-15T10:55:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 13,
+        "fields": {
+            "nom": "Site de sculptures de Laongo",
+            "ville": 1,
+            "description": "Ce site en plein air, situé dans la savane, présente de gigantesques blocs de granit sculptés par des artistes internationaux. C'est un véritable musée à ciel ouvert.",
+            "site_web": "ontb.bf",
+            "categorie": 5,
+            "latitude": "12.3650",
+            "longitude": "-1.2720",
+            "photo": "sites/laongo.jpg",
+            "tarif": "1000.00",
+            "horaire": "08h00 - 18h00",
+            "contact": "Tél: +226 70 00 00 13",
+            "date_creation": "2023-01-15T11:00:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 14,
+        "fields": {
+            "nom": "Place de la Révolution",
+            "ville": 1,
+            "description": "Un grand espace public au cœur de la capitale, où les habitants se retrouvent pour se détendre, faire du sport ou assister à des concerts.",
+            "site_web": "ontb.bf",
+            "categorie": 5,
+            "latitude": "12.3682",
+            "longitude": "-1.5273",
+            "photo": "sites/Place_Revolution.jpg",
+            "tarif": "0.00",
+            "horaire": "Ouvert en permanence",
+            "contact": "Tél: +226 70 00 00 14",
+            "date_creation": "2023-01-15T11:05:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 15,
+        "fields": {
+            "nom": "Vieilles Mosquées de Bani",
+            "ville": 460,
+            "description": "Construites au XIXe siècle dans le style soudano-sahélien, les sept mosquées de Bani sont parmi les plus emblématiques du Burkina Faso.",
+            "site_web": "ontb.bf",
+            "categorie": 3,
+            "latitude": "13.0833",
+            "longitude": "-0.6333",
+            "photo": "sites/mosquees_bani.jpg",
+            "tarif": "500.00",
+            "horaire": "08h00 - 18h00",
+            "contact": "Tél: +226 70 00 00 21",
+            "date_creation": "2023-01-15T11:40:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 16,
+        "fields": {
+            "nom": "Caverne de Douna",
+            "ville": 456,
+            "description": "Site naturel et spirituel, la caverne de Douna est un lieu chargé d’histoire et de légendes, souvent visité pour son caractère mystique et son importance culturelle.",
+            "site_web": "ontb.bf",
+            "categorie": 2,
+            "latitude": "10.6500",
+            "longitude": "-4.7500",
+            "photo": "sites/caverne_douna.jpg",
+            "tarif": "1000.00",
+            "horaire": "08h00 - 17h00",
+            "contact": "Tél: +226 70 00 00 19",
+            "date_creation": "2023-01-15T11:30:00Z"
+        }
+    },
+    {
+        "model": "gestion_cycle.sitetouristique",
+        "pk": 17,
+        "fields": {
+            "nom": "Lac de Tengréla",
+            "ville": 6,
+            "description": "Un lac pittoresque situé près de Banfora, connu pour ses hippopotames et ses paysages paisibles, idéal pour les balades en pirogue.",
+            "site_web": "ontb.bf",
+            "categorie": 1,
+            "latitude": "10.7000",
+            "longitude": "-4.8000",
+            "photo": "sites/lac_tengrela.jpg",
+            "tarif": "1000.00",
+            "horaire": "07h00 - 18h00",
+            "contact": "Tél: +226 70 00 00 20",
+            "date_creation": "2023-01-15T11:35:00Z"
+        }
+    }
+]

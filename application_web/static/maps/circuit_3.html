@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0dfe40abf2ccf0b88d56ac999243fe83 {
+                    position: relative;
+                    width: 250.0px;
+                    height: 200.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0dfe40abf2ccf0b88d56ac999243fe83" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0dfe40abf2ccf0b88d56ac999243fe83 = L.map(
+                "map_0dfe40abf2ccf0b88d56ac999243fe83",
+                {
+                    center: [13.0833, -0.6333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_02fe4169393e7986c5cd8b5676203443 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_02fe4169393e7986c5cd8b5676203443.addTo(map_0dfe40abf2ccf0b88d56ac999243fe83);
+        
+    
+            var marker_50f1adc0dd992c30960ae2ba3ce941ca = L.marker(
+                [13.0833, -0.6333],
+                {
+}
+            ).addTo(map_0dfe40abf2ccf0b88d56ac999243fe83);
+        
+    
+            var icon_0b7e71c05f10e88a181c59f3dc7ed784 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4a2cd38f59df795a5a716b4e4227bb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0d6052922ef9f95eda4bcb051d9bfad = $(`<div id="html_f0d6052922ef9f95eda4bcb051d9bfad" style="width: 100.0%; height: 100.0%;">Vieilles Mosquées de Bani</div>`)[0];
+                popup_b4a2cd38f59df795a5a716b4e4227bb3.setContent(html_f0d6052922ef9f95eda4bcb051d9bfad);
+            
+        
+
+        marker_50f1adc0dd992c30960ae2ba3ce941ca.bindPopup(popup_b4a2cd38f59df795a5a716b4e4227bb3)
+        ;
+
+        
+    
+    
+            marker_50f1adc0dd992c30960ae2ba3ce941ca.bindTooltip(
+                `<div>
+                     Vieilles Mosquées de Bani
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50f1adc0dd992c30960ae2ba3ce941ca.setIcon(icon_0b7e71c05f10e88a181c59f3dc7ed784);
+            
+    
+            var marker_7473f9e0a8383e2bdd1e0c0b21f45742 = L.marker(
+                [11.0827, -0.5898],
+                {
+}
+            ).addTo(map_0dfe40abf2ccf0b88d56ac999243fe83);
+        
+    
+            var icon_8fd8f59822c131c95fe5cd590bee220b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcc59cf5a0ad145e91ea4d45a1aa0d6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_811a85d945f91a02154367d1b909331d = $(`<div id="html_811a85d945f91a02154367d1b909331d" style="width: 100.0%; height: 100.0%;">Cour Royale de Tiébélé</div>`)[0];
+                popup_fcc59cf5a0ad145e91ea4d45a1aa0d6f.setContent(html_811a85d945f91a02154367d1b909331d);
+            
+        
+
+        marker_7473f9e0a8383e2bdd1e0c0b21f45742.bindPopup(popup_fcc59cf5a0ad145e91ea4d45a1aa0d6f)
+        ;
+
+        
+    
+    
+            marker_7473f9e0a8383e2bdd1e0c0b21f45742.bindTooltip(
+                `<div>
+                     Cour Royale de Tiébélé
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7473f9e0a8383e2bdd1e0c0b21f45742.setIcon(icon_8fd8f59822c131c95fe5cd590bee220b);
+            
+    
+            var marker_b3d74490f0386fae87a4edc7793e3bfb = L.marker(
+                [10.6389, -4.7077],
+                {
+}
+            ).addTo(map_0dfe40abf2ccf0b88d56ac999243fe83);
+        
+    
+            var icon_eb33a79f3dcc77664e75ea83f69d50bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b89401f0ba61a562650f2550d24afa8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b632b3dc4248bee8bd36d1e442143e8c = $(`<div id="html_b632b3dc4248bee8bd36d1e442143e8c" style="width: 100.0%; height: 100.0%;">Cascades de Karfiguéla</div>`)[0];
+                popup_1b89401f0ba61a562650f2550d24afa8.setContent(html_b632b3dc4248bee8bd36d1e442143e8c);
+            
+        
+
+        marker_b3d74490f0386fae87a4edc7793e3bfb.bindPopup(popup_1b89401f0ba61a562650f2550d24afa8)
+        ;
+
+        
+    
+    
+            marker_b3d74490f0386fae87a4edc7793e3bfb.bindTooltip(
+                `<div>
+                     Cascades de Karfiguéla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3d74490f0386fae87a4edc7793e3bfb.setIcon(icon_eb33a79f3dcc77664e75ea83f69d50bc);
+            
+    
+            var poly_line_847487f33331efa7e2597282a712b239 = L.polyline(
+                [[13.0833, -0.6333], [11.0827, -0.5898], [10.6389, -4.7077]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_0dfe40abf2ccf0b88d56ac999243fe83);
+        
+</script>
+</html>

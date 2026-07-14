@@ -1,0 +1,274 @@
+[
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 1, "image": "sites/cascades_karfiguela_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 1, "image": "sites/cascades_karfiguela_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 1, "image": "sites/cascades_karfiguela_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 1, "image": "sites/cascades_karfiguela_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 2, "image": "sites/pics_sindou_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 2, "image": "sites/pics_sindou_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 2, "image": "sites/pics_sindou_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 2, "image": "sites/pics_sindou_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 3, "image": "sites/ruines_loropeni_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 3, "image": "sites/ruines_loropeni_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 3, "image": "sites/ruines_loropeni_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 3, "image": "sites/ruines_loropeni_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 4, "image": "sites/Cour_Royale_Tiebele_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 4, "image": "sites/Cour_Royale_Tiebele_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 4, "image": "sites/Cour_Royale_Tiebele_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 4, "image": "sites/Cour_Royale_Tiebele_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 5, "image": "sites/mare_hippopotame_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 5, "image": "sites/mare_hippopotame_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 5, "image": "sites/mare_hippopotame_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 5, "image": "sites/mare_hippopotame_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 6, "image": "sites/domes_fabedougou_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 6, "image": "sites/domes_fabedougou_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 6, "image": "sites/domes_fabedougou_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 6, "image": "sites/domes_fabedougou_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 7, "image": "sites/musee_national_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 7, "image": "sites/musee_national_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 7, "image": "sites/musee_national_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 7, "image": "sites/musee_national_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 8, "image": "sites/mosquee_bobo_dioulasso_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 8, "image": "sites/mosquee_bobo_dioulasso_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 8, "image": "sites/mosquee_bobo_dioulasso_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 8, "image": "sites/mosquee_bobo_dioulasso_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 9, "image": "sites/reserve_nazinga_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 9, "image": "sites/reserve_nazinga_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 9, "image": "sites/reserve_nazinga_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 9, "image": "sites/reserve_nazinga_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 10, "image": "sites/vao_ouagadougou_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 10, "image": "sites/vao_ouagadougou_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 10, "image": "sites/vao_ouagadougou_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 10, "image": "sites/vao_ouagadougou_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 11, "image": "sites/FESPACO_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 11, "image": "sites/FESPACO_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 11, "image": "sites/FESPACO_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 11, "image": "sites/FESPACO_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 12, "image": "sites/SIAO_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 12, "image": "sites/SIAO_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 12, "image": "sites/SIAO_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 12, "image": "sites/SIAO_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 13, "image": "sites/laongo_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 13, "image": "sites/laongo_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 13, "image": "sites/laongo_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 13, "image": "sites/laongo_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 14, "image": "sites/Place_Revolution_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 14, "image": "sites/Place_Revolution_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 14, "image": "sites/Place_Revolution_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 14, "image": "sites/Place_Revolution_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 15, "image": "sites/mosquees_bani_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 15, "image": "sites/mosquees_bani_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 15, "image": "sites/mosquees_bani_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 15, "image": "sites/mosquees_bani_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 16, "image": "sites/caverne_douna_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 16, "image": "sites/caverne_douna_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 16, "image": "sites/caverne_douna_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 16, "image": "sites/caverne_douna_4.jpg", "ordre": 3 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 17, "image": "sites/lac_tengrela_1.jpg", "ordre": 0 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 17, "image": "sites/lac_tengrela_2.jpg", "ordre": 1 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 17, "image": "sites/lac_tengrela_3.jpg", "ordre": 2 }
+  },
+  {
+    "model": "gestion_cycle.siteimage",
+    "fields": { "site": 17, "image": "sites/lac_tengrela_4.jpg", "ordre": 3 }
+  }
+]

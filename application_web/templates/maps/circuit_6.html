@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_02a3b9298b2230a1aae22dcd1a019ce1 {
+                    position: relative;
+                    width: 250.0px;
+                    height: 200.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_02a3b9298b2230a1aae22dcd1a019ce1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_02a3b9298b2230a1aae22dcd1a019ce1 = L.map(
+                "map_02a3b9298b2230a1aae22dcd1a019ce1",
+                {
+                    center: [12.3524, -1.5218],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_49201070d06342ccdf07d02d82b2f428 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_49201070d06342ccdf07d02d82b2f428.addTo(map_02a3b9298b2230a1aae22dcd1a019ce1);
+        
+    
+            var marker_8c3249d889d778e7f77cbcc3d38f6ef8 = L.marker(
+                [12.3524, -1.5218],
+                {
+}
+            ).addTo(map_02a3b9298b2230a1aae22dcd1a019ce1);
+        
+    
+            var icon_7f422dc90c4cf5f333a8e8235952a44a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6433d83ea9568321b565717f14738cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45f8904850d69c574dfef34a0803fe74 = $(`<div id="html_45f8904850d69c574dfef34a0803fe74" style="width: 100.0%; height: 100.0%;">Musée National du Burkina Faso</div>`)[0];
+                popup_e6433d83ea9568321b565717f14738cf.setContent(html_45f8904850d69c574dfef34a0803fe74);
+            
+        
+
+        marker_8c3249d889d778e7f77cbcc3d38f6ef8.bindPopup(popup_e6433d83ea9568321b565717f14738cf)
+        ;
+
+        
+    
+    
+            marker_8c3249d889d778e7f77cbcc3d38f6ef8.bindTooltip(
+                `<div>
+                     Musée National du Burkina Faso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c3249d889d778e7f77cbcc3d38f6ef8.setIcon(icon_7f422dc90c4cf5f333a8e8235952a44a);
+            
+    
+            var marker_f4b896ed0db0db88e9a0a66369659810 = L.marker(
+                [12.3682, -1.5273],
+                {
+}
+            ).addTo(map_02a3b9298b2230a1aae22dcd1a019ce1);
+        
+    
+            var icon_d1ebfd1e546bc5caea957c66fc377a43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3cb6f34c2367bf7a7479a8f28746378 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a2e388998169fd4a83e6f3ceac06f92 = $(`<div id="html_5a2e388998169fd4a83e6f3ceac06f92" style="width: 100.0%; height: 100.0%;">Place de la Révolution</div>`)[0];
+                popup_c3cb6f34c2367bf7a7479a8f28746378.setContent(html_5a2e388998169fd4a83e6f3ceac06f92);
+            
+        
+
+        marker_f4b896ed0db0db88e9a0a66369659810.bindPopup(popup_c3cb6f34c2367bf7a7479a8f28746378)
+        ;
+
+        
+    
+    
+            marker_f4b896ed0db0db88e9a0a66369659810.bindTooltip(
+                `<div>
+                     Place de la Révolution
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4b896ed0db0db88e9a0a66369659810.setIcon(icon_d1ebfd1e546bc5caea957c66fc377a43);
+            
+    
+            var marker_58b5b22f89684c4ee70ae65f3278fe99 = L.marker(
+                [12.3685, -1.5302],
+                {
+}
+            ).addTo(map_02a3b9298b2230a1aae22dcd1a019ce1);
+        
+    
+            var icon_bce79621e752d947fb30ffba292ee63d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5636838fe2be94a797eeeaaa941c3bf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_031f30087a0f136b0c30206cc7c71f92 = $(`<div id="html_031f30087a0f136b0c30206cc7c71f92" style="width: 100.0%; height: 100.0%;">Village Artisanal de Ouagadougou (VAO)</div>`)[0];
+                popup_5636838fe2be94a797eeeaaa941c3bf3.setContent(html_031f30087a0f136b0c30206cc7c71f92);
+            
+        
+
+        marker_58b5b22f89684c4ee70ae65f3278fe99.bindPopup(popup_5636838fe2be94a797eeeaaa941c3bf3)
+        ;
+
+        
+    
+    
+            marker_58b5b22f89684c4ee70ae65f3278fe99.bindTooltip(
+                `<div>
+                     Village Artisanal de Ouagadougou (VAO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58b5b22f89684c4ee70ae65f3278fe99.setIcon(icon_bce79621e752d947fb30ffba292ee63d);
+            
+    
+            var marker_74d9a31d80b067dda3f5717c97e114f3 = L.marker(
+                [12.365, -1.272],
+                {
+}
+            ).addTo(map_02a3b9298b2230a1aae22dcd1a019ce1);
+        
+    
+            var icon_d1686ce0d45843bd30aec253702053f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73016266ac28ff760f778163143c86cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e861f5dee22724674a605e1b6775a9a = $(`<div id="html_1e861f5dee22724674a605e1b6775a9a" style="width: 100.0%; height: 100.0%;">Site de sculptures de Laongo</div>`)[0];
+                popup_73016266ac28ff760f778163143c86cc.setContent(html_1e861f5dee22724674a605e1b6775a9a);
+            
+        
+
+        marker_74d9a31d80b067dda3f5717c97e114f3.bindPopup(popup_73016266ac28ff760f778163143c86cc)
+        ;
+
+        
+    
+    
+            marker_74d9a31d80b067dda3f5717c97e114f3.bindTooltip(
+                `<div>
+                     Site de sculptures de Laongo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74d9a31d80b067dda3f5717c97e114f3.setIcon(icon_d1686ce0d45843bd30aec253702053f3);
+            
+    
+            var marker_134297cf5924b6f6130fbe91eaa48925 = L.marker(
+                [12.375, -1.533],
+                {
+}
+            ).addTo(map_02a3b9298b2230a1aae22dcd1a019ce1);
+        
+    
+            var icon_31b454aa32058f0b1add6660ab23ca89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fddaf9e2b90efa60c1d508ec0753cf81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a8f025925a0bff580757c7973101dcd = $(`<div id="html_7a8f025925a0bff580757c7973101dcd" style="width: 100.0%; height: 100.0%;">Salon international de l'artisanat de Ouagadougou (SIAO)</div>`)[0];
+                popup_fddaf9e2b90efa60c1d508ec0753cf81.setContent(html_7a8f025925a0bff580757c7973101dcd);
+            
+        
+
+        marker_134297cf5924b6f6130fbe91eaa48925.bindPopup(popup_fddaf9e2b90efa60c1d508ec0753cf81)
+        ;
+
+        
+    
+    
+            marker_134297cf5924b6f6130fbe91eaa48925.bindTooltip(
+                `<div>
+                     Salon international de l'artisanat de Ouagadougou (SIAO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_134297cf5924b6f6130fbe91eaa48925.setIcon(icon_31b454aa32058f0b1add6660ab23ca89);
+            
+    
+            var marker_714c12f9ec9018c520d8f0e0034c041d = L.marker(
+                [12.3686, -1.5306],
+                {
+}
+            ).addTo(map_02a3b9298b2230a1aae22dcd1a019ce1);
+        
+    
+            var icon_871c981aa061482283c89b1c7993cac8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c8a27ffff6a7dd92fcd725bc3bda86b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd949033c26f04266eed38a32f5d4c3e = $(`<div id="html_bd949033c26f04266eed38a32f5d4c3e" style="width: 100.0%; height: 100.0%;">Festival panafricain du cinéma et de la télévision de Ouagadougou (FESPACO)</div>`)[0];
+                popup_5c8a27ffff6a7dd92fcd725bc3bda86b.setContent(html_bd949033c26f04266eed38a32f5d4c3e);
+            
+        
+
+        marker_714c12f9ec9018c520d8f0e0034c041d.bindPopup(popup_5c8a27ffff6a7dd92fcd725bc3bda86b)
+        ;
+
+        
+    
+    
+            marker_714c12f9ec9018c520d8f0e0034c041d.bindTooltip(
+                `<div>
+                     Festival panafricain du cinéma et de la télévision de Ouagadougou (FESPACO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_714c12f9ec9018c520d8f0e0034c041d.setIcon(icon_871c981aa061482283c89b1c7993cac8);
+            
+    
+            var poly_line_74dc76e101330abf289512e71874cacf = L.polyline(
+                [[12.3524, -1.5218], [12.3682, -1.5273], [12.3685, -1.5302], [12.365, -1.272], [12.375, -1.533], [12.3686, -1.5306]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_02a3b9298b2230a1aae22dcd1a019ce1);
+        
+</script>
+</html>

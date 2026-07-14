@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_26c4baa40feaa76e8307cd85b77253eb {
+                    position: relative;
+                    width: 250.0px;
+                    height: 200.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_26c4baa40feaa76e8307cd85b77253eb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_26c4baa40feaa76e8307cd85b77253eb = L.map(
+                "map_26c4baa40feaa76e8307cd85b77253eb",
+                {
+                    center: [11.08, -1.53],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7bf9a19f5657208347cc39aeb26fe585 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7bf9a19f5657208347cc39aeb26fe585.addTo(map_26c4baa40feaa76e8307cd85b77253eb);
+        
+    
+            var marker_e873930232422273fbfec03b9edd0632 = L.marker(
+                [11.08, -1.53],
+                {
+}
+            ).addTo(map_26c4baa40feaa76e8307cd85b77253eb);
+        
+    
+            var icon_48283e11c2620f0902c4a7c0fa643322 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2770380c8f4dcce2e02b66de9430ea5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f1aa5548c18492fad3bd14fba22c874 = $(`<div id="html_2f1aa5548c18492fad3bd14fba22c874" style="width: 100.0%; height: 100.0%;">Réserve Naturelle Intégrale de Nazinga</div>`)[0];
+                popup_2770380c8f4dcce2e02b66de9430ea5f.setContent(html_2f1aa5548c18492fad3bd14fba22c874);
+            
+        
+
+        marker_e873930232422273fbfec03b9edd0632.bindPopup(popup_2770380c8f4dcce2e02b66de9430ea5f)
+        ;
+
+        
+    
+    
+            marker_e873930232422273fbfec03b9edd0632.bindTooltip(
+                `<div>
+                     Réserve Naturelle Intégrale de Nazinga
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e873930232422273fbfec03b9edd0632.setIcon(icon_48283e11c2620f0902c4a7c0fa643322);
+            
+    
+            var marker_2a8cbdb794093835ce36961916f0a57c = L.marker(
+                [10.2858, -3.5414],
+                {
+}
+            ).addTo(map_26c4baa40feaa76e8307cd85b77253eb);
+        
+    
+            var icon_26e42d54d5d51c7f07a880b14487f8d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88f6e4cf5d452a67597c46b88d0ae821 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2670bfc626838f7f4fa0b6ceeecd5e76 = $(`<div id="html_2670bfc626838f7f4fa0b6ceeecd5e76" style="width: 100.0%; height: 100.0%;">Ruines de Loropéni</div>`)[0];
+                popup_88f6e4cf5d452a67597c46b88d0ae821.setContent(html_2670bfc626838f7f4fa0b6ceeecd5e76);
+            
+        
+
+        marker_2a8cbdb794093835ce36961916f0a57c.bindPopup(popup_88f6e4cf5d452a67597c46b88d0ae821)
+        ;
+
+        
+    
+    
+            marker_2a8cbdb794093835ce36961916f0a57c.bindTooltip(
+                `<div>
+                     Ruines de Loropéni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a8cbdb794093835ce36961916f0a57c.setIcon(icon_26e42d54d5d51c7f07a880b14487f8d9);
+            
+    
+            var marker_ca39bb0b16ed92f6e9e8807b7caf6ef1 = L.marker(
+                [10.6698, -4.7554],
+                {
+}
+            ).addTo(map_26c4baa40feaa76e8307cd85b77253eb);
+        
+    
+            var icon_3332e9feaec2044b9114e39bb41f2934 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fb8b82f5a47f53d20667994fc9c88a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fe66c8e9e3797f5fd660b80ce92a2c1 = $(`<div id="html_2fe66c8e9e3797f5fd660b80ce92a2c1" style="width: 100.0%; height: 100.0%;">Pics de Sindou</div>`)[0];
+                popup_1fb8b82f5a47f53d20667994fc9c88a3.setContent(html_2fe66c8e9e3797f5fd660b80ce92a2c1);
+            
+        
+
+        marker_ca39bb0b16ed92f6e9e8807b7caf6ef1.bindPopup(popup_1fb8b82f5a47f53d20667994fc9c88a3)
+        ;
+
+        
+    
+    
+            marker_ca39bb0b16ed92f6e9e8807b7caf6ef1.bindTooltip(
+                `<div>
+                     Pics de Sindou
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca39bb0b16ed92f6e9e8807b7caf6ef1.setIcon(icon_3332e9feaec2044b9114e39bb41f2934);
+            
+    
+            var marker_ade07e1ccb926071e195b5d464e20759 = L.marker(
+                [10.6389, -4.7077],
+                {
+}
+            ).addTo(map_26c4baa40feaa76e8307cd85b77253eb);
+        
+    
+            var icon_e049ea6aa8dd5982e8060b7b168a29d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71d15b5ed2f8d6445f1a8f2e421b4506 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9494ebea7bf294e5b7976668e6c33998 = $(`<div id="html_9494ebea7bf294e5b7976668e6c33998" style="width: 100.0%; height: 100.0%;">Cascades de Karfiguéla</div>`)[0];
+                popup_71d15b5ed2f8d6445f1a8f2e421b4506.setContent(html_9494ebea7bf294e5b7976668e6c33998);
+            
+        
+
+        marker_ade07e1ccb926071e195b5d464e20759.bindPopup(popup_71d15b5ed2f8d6445f1a8f2e421b4506)
+        ;
+
+        
+    
+    
+            marker_ade07e1ccb926071e195b5d464e20759.bindTooltip(
+                `<div>
+                     Cascades de Karfiguéla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ade07e1ccb926071e195b5d464e20759.setIcon(icon_e049ea6aa8dd5982e8060b7b168a29d0);
+            
+    
+            var marker_16f1f439f92e01c87477dbabdb468a43 = L.marker(
+                [10.7, -4.8],
+                {
+}
+            ).addTo(map_26c4baa40feaa76e8307cd85b77253eb);
+        
+    
+            var icon_4c4a58f45f8cd442c8ae5f1266e73b97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88690c31af8c1c91821902076593fd62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c102cb0a4ae9f8d44ac8f0061d96de0e = $(`<div id="html_c102cb0a4ae9f8d44ac8f0061d96de0e" style="width: 100.0%; height: 100.0%;">Lac de Tengréla</div>`)[0];
+                popup_88690c31af8c1c91821902076593fd62.setContent(html_c102cb0a4ae9f8d44ac8f0061d96de0e);
+            
+        
+
+        marker_16f1f439f92e01c87477dbabdb468a43.bindPopup(popup_88690c31af8c1c91821902076593fd62)
+        ;
+
+        
+    
+    
+            marker_16f1f439f92e01c87477dbabdb468a43.bindTooltip(
+                `<div>
+                     Lac de Tengréla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16f1f439f92e01c87477dbabdb468a43.setIcon(icon_4c4a58f45f8cd442c8ae5f1266e73b97);
+            
+    
+            var poly_line_be9e4e8c285f54cf1d96534a263c9ec3 = L.polyline(
+                [[11.08, -1.53], [10.2858, -3.5414], [10.6698, -4.7554], [10.6389, -4.7077], [10.7, -4.8]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_26c4baa40feaa76e8307cd85b77253eb);
+        
+</script>
+</html>

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ site.nom }}{% endblock %}
+
+{% block content %}
+    <div class="container-fluid p-0">
+        {% with images=site.images.all %}
+            {% if images %}
+                <img src="{{ images.0.image }}" class="img-responsive" alt="Bannière de {{ site.nom }}" style="width: 100%; max-height: 150px; object-fit: cover;">
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col-md-4">
+                {% with images=site.images.all %}
+                    {% for image in images|slice:"1:4" %}
+                        <img src="{{ image.image.url }}" class="img-responsive img-rounded" alt="Image {{ forloop.counter }} de {{ site.nom }}" style="margin-bottom: 10px;">
+                    {% endfor %}
+                {% endwith %}
+            </div>
+
+            <div class="col-md-8">
+                <h2 class="mb-3 ; text-center">{{ site.nom }}</h2>
+
+                <div style="height: 500px; width: 100%;">
+                    {{ card_html|safe }}
+                </div>
+
+                <p class="text-justify">{{ site.description }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Accueil - Cycle Touristique{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+
+ #contact {
+    background-color: #; /* Ou une autre nuance de bleu */
+    padding: 60px 0;           /* Espacement pour la section */
+    color: white;              /* Pour que les icônes ressortent */
+}
+.feature-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;           /* hauteur uniforme pour toutes les cartes */
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* légère ombre pour harmonie */
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 200px;           /* hauteur fixe pour toutes les vidéos */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container video,
+.video-container .video-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+</style>
+{% endblock %}
+
+{% block content %}
+<section id="home">
+    <div class="row">
+        <div class="owl-carousel owl-theme home-slider">
+            <div class="item item-first">
+                <div class="caption">
+                    <div class="container">
+                        <div class="col-md-6 col-sm-12">
+                            <h1>Les meilleurs circuits touristiques au Burkina-Faso</Burkina-Faso></h1>
+                            <h3>Découvrez la faune et la flore dans toute sa splendeur au pays des hommes intègres.</h3>
+                            <a href="#feature" class="section-btn btn btn-default smoothScroll">Réservez</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-second">
+                <div class="caption">
+                    <div class="container">
+                        <div class="col-md-6 col-sm-12">
+                            <h1>Immersion totale au coeur de l'Afrique de l'ouest</h1>
+                            <h3>Faites un fantastique tour inoubliable pour vous enrichir de la culture burkinabè, un tour personnalisé au gré.</h3>
+                            <a href="{% url 'sites_touristiques' %}" class="section-btn btn btn-default smoothScroll">Visitez</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-third">
+                <div class="caption">
+                    <div class="container">
+                        <div class="col-md-6 col-sm-12">
+                            <h1>Sur les traces des royaumes du passé</h1>
+                            <h3>Plongez dans l'histoire des empires Mossi et Gourmantché, explorez les palais et rituels qui forgent l'identité du pays.</h3>
+                            <a href="#contact" class="section-btn btn btn-default smoothScroll">Discutons</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="feature">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                <div class="feature-thumb">
+                    <div class="video-container">
+                        <!-- miniature statique -->
+                        <img src="{% static 'gestion_cycle/videos/video1_thumbail.png' %}" class="video-thumb" alt="Video preview">
+                        <!-- vidéo cachée par défaut -->
+                        <video class="video-slide" playsinline muted loop>
+                            <source src="{% static 'gestion_cycle/videos/video1.mp4' %}" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                <div class="feature-thumb">
+                    <div class="video-container">
+                        <!-- miniature statique -->
+                        <img src="{% static 'gestion_cycle/videos/video2_thumbail.png' %}" class="video-thumb" alt="Video preview">
+                        <!-- vidéo cachée par défaut -->
+                        <video class="video-slide" playsinline muted loop>
+                            <source src="{% static 'gestion_cycle/videos/video2.mp4' %}" type="video/mp4">
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                <div class="feature-thumb">
+                    <div class="video-container">
+                        <!-- miniature statique -->
+                        <img src="{% static 'gestion_cycle/videos/video3_thumbail.png' %}" class="video-thumb" alt="Video preview">
+                        <!-- vidéo cachée par défaut -->
+                        <video class="video-slide" playsinline muted loop>
+                            <source src="{% static 'gestion_cycle/videos/video3.mp4' %}" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section id="contact" class="my-5">
+    <div class="container" style="text-align: center">
+        <div class="d-flex justify-content-center flex-wrap align-items-center">
+
+            <a href="URL_DE_VOTRE_PROFIL_FACEBOOK" class="text-secondary mx-3 my-2" target="_blank">
+              <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/votre_nom_utilisateur" class="text-secondary mx-3 my-2" target="_blank">
+              <i class="fab fa-x-twitter fa-2x"></i>
+            </a>
+            <a href="URL_DE_VOTRE_PROFIL_INSTAGRAM" class="text-secondary mx-3 my-2" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="URL_DE_VOTRE_PROFIL_LINKEDIN" class="text-secondary mx-3 my-2" target="_blank">
+              <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href="URL_DE_VOTRE_CHAINE_YOUTUBE" class="text-secondary mx-3 my-2" target="_blank">
+              <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a href="URL_DE_VOTRE_PROFIL_TIKTOK" class="text-secondary mx-3 my-2" target="_blank">
+              <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+
+            <a href="mailto:votre-email@exemple.com" class="text-secondary mx-3 my-2">
+              <i class="fas fa-envelope fa-2x"></i>
+            </a>
+            <a href="https://wa.me/votre_numero_de_telephone" class="text-secondary mx-3 my-2" target="_blank">
+              <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="tel:votre_numero_de_telephone" class="text-secondary mx-3 my-2">
+              <i class="fas fa-phone-alt fa-2x"></i>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.querySelectorAll('.video-container').forEach(container => {
+    const thumb = container.querySelector('.video-thumb');
+    const video = container.querySelector('.video-slide');
+
+    container.addEventListener('mouseenter', () => {
+        thumb.style.display = 'none';
+        video.style.display = 'block';
+        video.muted = true;   // obligatoire pour autoplay sur certains navigateurs
+        video.play().catch(err => console.log("Autoplay bloqué", err));
+    });
+
+    container.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+        video.style.display = 'none';
+        thumb.style.display = 'block';
+    });
+});
+</script>
+
+{% endblock %}

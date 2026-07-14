@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5eb383b2404950acd363e16237080cf {
+                    position: relative;
+                    width: 250.0px;
+                    height: 200.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f5eb383b2404950acd363e16237080cf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f5eb383b2404950acd363e16237080cf = L.map(
+                "map_f5eb383b2404950acd363e16237080cf",
+                {
+                    center: [12.3524, -1.5218],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d3fa1a681e318f4d4661cd938be647c0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d3fa1a681e318f4d4661cd938be647c0.addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+    
+            var marker_2b1933067a52bd993f2f394be45e4028 = L.marker(
+                [12.3524, -1.5218],
+                {
+}
+            ).addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+    
+            var icon_064470b2312a35f5a29c433559edab21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36068f9a4576084f7f50a13c9b408072 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc32b78ee0dce8263e9d957a9d67dfa5 = $(`<div id="html_fc32b78ee0dce8263e9d957a9d67dfa5" style="width: 100.0%; height: 100.0%;">Musée National du Burkina Faso</div>`)[0];
+                popup_36068f9a4576084f7f50a13c9b408072.setContent(html_fc32b78ee0dce8263e9d957a9d67dfa5);
+            
+        
+
+        marker_2b1933067a52bd993f2f394be45e4028.bindPopup(popup_36068f9a4576084f7f50a13c9b408072)
+        ;
+
+        
+    
+    
+            marker_2b1933067a52bd993f2f394be45e4028.bindTooltip(
+                `<div>
+                     Musée National du Burkina Faso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2b1933067a52bd993f2f394be45e4028.setIcon(icon_064470b2312a35f5a29c433559edab21);
+            
+    
+            var marker_dc909fc0c0a5965dc2885422e7b82e63 = L.marker(
+                [12.3685, -1.5302],
+                {
+}
+            ).addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+    
+            var icon_217e96d0f6ba8a6958f55b6c2d2cbb23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcf98844f62fd75401d41501c38748ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1646cd7a2d0ebc5a5c4e0faa69ffb1c2 = $(`<div id="html_1646cd7a2d0ebc5a5c4e0faa69ffb1c2" style="width: 100.0%; height: 100.0%;">Village Artisanal de Ouagadougou (VAO)</div>`)[0];
+                popup_fcf98844f62fd75401d41501c38748ee.setContent(html_1646cd7a2d0ebc5a5c4e0faa69ffb1c2);
+            
+        
+
+        marker_dc909fc0c0a5965dc2885422e7b82e63.bindPopup(popup_fcf98844f62fd75401d41501c38748ee)
+        ;
+
+        
+    
+    
+            marker_dc909fc0c0a5965dc2885422e7b82e63.bindTooltip(
+                `<div>
+                     Village Artisanal de Ouagadougou (VAO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc909fc0c0a5965dc2885422e7b82e63.setIcon(icon_217e96d0f6ba8a6958f55b6c2d2cbb23);
+            
+    
+            var marker_27c81278065c31881559618da37f2f37 = L.marker(
+                [12.365, -1.272],
+                {
+}
+            ).addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+    
+            var icon_eff516e222ea30eb77888c646b7c199e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d400d5ac29260076ff4fae358917e93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_085d042f54aa8f92bc25730981753c61 = $(`<div id="html_085d042f54aa8f92bc25730981753c61" style="width: 100.0%; height: 100.0%;">Site de sculptures de Laongo</div>`)[0];
+                popup_6d400d5ac29260076ff4fae358917e93.setContent(html_085d042f54aa8f92bc25730981753c61);
+            
+        
+
+        marker_27c81278065c31881559618da37f2f37.bindPopup(popup_6d400d5ac29260076ff4fae358917e93)
+        ;
+
+        
+    
+    
+            marker_27c81278065c31881559618da37f2f37.bindTooltip(
+                `<div>
+                     Site de sculptures de Laongo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_27c81278065c31881559618da37f2f37.setIcon(icon_eff516e222ea30eb77888c646b7c199e);
+            
+    
+            var marker_19762f2446f12b6ae07871c5ff6af745 = L.marker(
+                [13.0833, -0.6333],
+                {
+}
+            ).addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+    
+            var icon_31ec32dd0a93eeeab35f6c61131342d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_135c37e75bccbb27c92c9c169d7bb550 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e1e309d00cb44544f8c01627572a794 = $(`<div id="html_9e1e309d00cb44544f8c01627572a794" style="width: 100.0%; height: 100.0%;">Vieilles Mosquées de Bani</div>`)[0];
+                popup_135c37e75bccbb27c92c9c169d7bb550.setContent(html_9e1e309d00cb44544f8c01627572a794);
+            
+        
+
+        marker_19762f2446f12b6ae07871c5ff6af745.bindPopup(popup_135c37e75bccbb27c92c9c169d7bb550)
+        ;
+
+        
+    
+    
+            marker_19762f2446f12b6ae07871c5ff6af745.bindTooltip(
+                `<div>
+                     Vieilles Mosquées de Bani
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19762f2446f12b6ae07871c5ff6af745.setIcon(icon_31ec32dd0a93eeeab35f6c61131342d7);
+            
+    
+            var marker_c487188071d26e3ab1800c9fe14b96dc = L.marker(
+                [11.08, -1.53],
+                {
+}
+            ).addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+    
+            var icon_09c45758ac70a641c08c489c44742a68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9da896cb4c9378ec76c046fbff9359b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a59eeff0c0d2d7d71a7994fbe49800c5 = $(`<div id="html_a59eeff0c0d2d7d71a7994fbe49800c5" style="width: 100.0%; height: 100.0%;">Réserve Naturelle Intégrale de Nazinga</div>`)[0];
+                popup_9da896cb4c9378ec76c046fbff9359b1.setContent(html_a59eeff0c0d2d7d71a7994fbe49800c5);
+            
+        
+
+        marker_c487188071d26e3ab1800c9fe14b96dc.bindPopup(popup_9da896cb4c9378ec76c046fbff9359b1)
+        ;
+
+        
+    
+    
+            marker_c487188071d26e3ab1800c9fe14b96dc.bindTooltip(
+                `<div>
+                     Réserve Naturelle Intégrale de Nazinga
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c487188071d26e3ab1800c9fe14b96dc.setIcon(icon_09c45758ac70a641c08c489c44742a68);
+            
+    
+            var marker_b59dc52e19996e23c01084ff0b0deaa5 = L.marker(
+                [11.0827, -0.5898],
+                {
+}
+            ).addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+    
+            var icon_7a2fe8384886c94cda1c4229c39a585d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f60b14b65cde4966208f7d0d0b334b3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3892c5bc726b423e4ff1b9b32fee6533 = $(`<div id="html_3892c5bc726b423e4ff1b9b32fee6533" style="width: 100.0%; height: 100.0%;">Cour Royale de Tiébélé</div>`)[0];
+                popup_f60b14b65cde4966208f7d0d0b334b3b.setContent(html_3892c5bc726b423e4ff1b9b32fee6533);
+            
+        
+
+        marker_b59dc52e19996e23c01084ff0b0deaa5.bindPopup(popup_f60b14b65cde4966208f7d0d0b334b3b)
+        ;
+
+        
+    
+    
+            marker_b59dc52e19996e23c01084ff0b0deaa5.bindTooltip(
+                `<div>
+                     Cour Royale de Tiébélé
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b59dc52e19996e23c01084ff0b0deaa5.setIcon(icon_7a2fe8384886c94cda1c4229c39a585d);
+            
+    
+            var marker_9e210b14cceb869b0cba92f173947a65 = L.marker(
+                [10.2858, -3.5414],
+                {
+}
+            ).addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+    
+            var icon_048aef48446bd7c2b102581852835e1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f022b5f0e4e2bd6b1634ac8c4e6776ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ecb618cf488faa0c0e9810c37c33d9e = $(`<div id="html_9ecb618cf488faa0c0e9810c37c33d9e" style="width: 100.0%; height: 100.0%;">Ruines de Loropéni</div>`)[0];
+                popup_f022b5f0e4e2bd6b1634ac8c4e6776ae.setContent(html_9ecb618cf488faa0c0e9810c37c33d9e);
+            
+        
+
+        marker_9e210b14cceb869b0cba92f173947a65.bindPopup(popup_f022b5f0e4e2bd6b1634ac8c4e6776ae)
+        ;
+
+        
+    
+    
+            marker_9e210b14cceb869b0cba92f173947a65.bindTooltip(
+                `<div>
+                     Ruines de Loropéni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9e210b14cceb869b0cba92f173947a65.setIcon(icon_048aef48446bd7c2b102581852835e1f);
+            
+    
+            var poly_line_38e55135849db20ab0ded0fe4c0d51ec = L.polyline(
+                [[12.3524, -1.5218], [12.3685, -1.5302], [12.365, -1.272], [13.0833, -0.6333], [11.08, -1.53], [11.0827, -0.5898], [10.2858, -3.5414]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_f5eb383b2404950acd363e16237080cf);
+        
+</script>
+</html>

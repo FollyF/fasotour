@@ -1,0 +1,254 @@
+[
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 1,
+    "fields": {
+      "nom": "Traoré",
+      "prenom": "Fatoumata",
+      "telephone": "71234567",
+      "email": "f.traore@example.com",
+      "photo": "guides/fatoumata_traore.jpg",
+      "description": "Spécialiste de l'histoire et de la culture des royaumes Mossi, elle offre des circuits immersifs autour de Ouagadougou. Passionnée par le conte, elle partage les légendes locales."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 2,
+    "fields": {
+      "nom": "Kaboré",
+      "prenom": "Alain",
+      "telephone": "69876543",
+      "email": "a.kabore@example.com",
+      "photo": "guides/alain_kabore.jpg",
+      "description": "Guide de trekking expérimenté, il se spécialise dans les randonnées vers les Pics de Sindou et les Dômes de Fabedougou. Il a une connaissance approfondie de la faune et la flore de l'Ouest du pays."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 3,
+    "fields": {
+      "nom": "Sow",
+      "prenom": "Mariam",
+      "telephone": "50112233",
+      "email": "m.sow@example.com",
+      "photo": "guides/mariam_sow.jpg",
+      "description": "Artisanale et passionnée de cuisine, elle propose des ateliers et des visites de marchés pour découvrir l'artisanat et les saveurs du Burkina. Elle parle le mooré et le français."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 4,
+    "fields": {
+      "nom": "Diallo",
+      "prenom": "Amadou",
+      "telephone": "70987654",
+      "email": "a.diallo@example.com",
+      "photo": "guides/amadou_diallo.jpg",
+      "description": "Spécialisé dans les circuits en 4x4 vers les réserves de la Pendjari et d'Arly. Il possède une grande expérience des parcs nationaux et des safaris animaliers."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 5,
+    "fields": {
+      "nom": "Coulibaly",
+      "prenom": "Aminata",
+      "telephone": "51223344",
+      "email": "a.coulibaly@example.com",
+      "photo": "guides/aminata_coulibaly.jpg",
+      "description": "Guide polyglotte (français, anglais, allemand), elle se concentre sur les visites culturelles à Bobo-Dioulasso, notamment la mosquée de Dioulassoba et les quartiers historiques."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 6,
+    "fields": {
+      "nom": "Ouédraogo",
+      "prenom": "Jacques",
+      "telephone": "60334455",
+      "email": "j.ouedraogo@example.com",
+      "photo": "guides/jacques_ouedraogo.jpg",
+      "description": "Expert des traditions locales et de l'histoire pré-coloniale, il propose des circuits thématiques sur les royaumes et les sites historiques comme les ruines de Loropéni."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 7,
+    "fields": {
+      "nom": "Zongo",
+      "prenom": "Adama",
+      "telephone": "78556677",
+      "email": "a.zongo@example.com",
+      "photo": "guides/adama_zongo.jpg",
+      "description": "Passionné de musique et de danse, Adama propose des circuits pour découvrir les instruments traditionnels et assister à des spectacles locaux."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 8,
+    "fields": {
+      "nom": "Sanou",
+      "prenom": "Rosalie",
+      "telephone": "65112233",
+      "email": "r.sanou@example.com",
+      "photo": "guides/rosalie_sanou.jpg",
+      "description": "Elle est spécialisée dans les visites de villages traditionnels et la rencontre avec les populations locales. Elle a une approche très humaine et respectueuse du tourisme."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 9,
+    "fields": {
+      "nom": "Sawadogo",
+      "prenom": "Hamidou",
+      "telephone": "70667788",
+      "email": "h.sawadogo@example.com",
+      "photo": "guides/hamidou_sawadogo.jpg",
+      "description": "Guide pour les safaris photos dans le sud du pays. Il connait les meilleurs spots pour observer les animaux sans les déranger."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 10,
+    "fields": {
+      "nom": "Compagnon",
+      "prenom": "Bénédicte",
+      "telephone": "54778899",
+      "email": "b.compagnon@example.com",
+      "photo": "guides/benedicte_compagnon.jpg",
+      "description": "Guide pour les excursions en canoë sur les lacs. Elle est spécialiste des écosystèmes aquatiques et de la faune aviaire."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 11,
+    "fields": {
+      "nom": "Nikiema",
+      "prenom": "Oumar",
+      "telephone": "72889900",
+      "email": "o.nikiema@example.com",
+      "photo": "guides/oumar_nikiema.jpg",
+      "description": "Guide bilingue (français, anglais) spécialisé dans le patrimoine architectural de la région du Sahel. Il organise des visites des anciennes villes de commerce."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 12,
+    "fields": {
+      "nom": "Koné",
+      "prenom": "Assiata",
+      "telephone": "61990011",
+      "email": "a.kone@example.com",
+      "photo": "guides/assiata_kone.jpg",
+      "description": "Elle se concentre sur les circuits de volontourisme et les rencontres avec des projets de développement locaux. Elle met en avant le tourisme responsable."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 13,
+    "fields": {
+      "nom": "Ouédraogo",
+      "prenom": "Célestin",
+      "telephone": "50112244",
+      "email": "c.ouedraogo@example.com",
+      "photo": "guides/celestin_ouedraogo.jpg",
+      "description": "Célestin est un historien local spécialisé dans les traditions et les rituels de la région du Centre-Ouest. Il guide des visites des sites sacrés et des lieux de culte animistes."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 14,
+    "fields": {
+      "nom": "Yameogo",
+      "prenom": "Moussa",
+      "telephone": "65445566",
+      "email": "m.yameogo@example.com",
+      "photo": "guides/moussa_yameogo.jpg",
+      "description": "Passionné de géologie et de paysages, Moussa propose des excursions pour explorer les formations rocheuses et les grottes, comme la grotte de Niansogoni."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 15,
+    "fields": {
+      "nom": "Bamba",
+      "prenom": "Sophie",
+      "telephone": "79556677",
+      "email": "s.bamba@example.com",
+      "photo": "guides/sophie_bamba.jpg",
+      "description": "Guide francophone pour les voyageurs solo et les petits groupes. Elle est spécialisée dans les visites des marchés et les circuits gastronomiques."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 16,
+    "fields": {
+      "nom": "Guissou",
+      "prenom": "Pascal",
+      "telephone": "56778899",
+      "email": "p.guissou@example.com",
+      "photo": "guides/pascal_guissou.jpg",
+      "description": "Expert des circuits à vélo et des randonnées dans la région de Koudougou. Il a une bonne connaissance des pistes et des sentiers."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 17,
+    "fields": {
+      "nom": "Savadogo",
+      "prenom": "Awa",
+      "telephone": "77889900",
+      "email": "a.savadogo@example.com",
+      "photo": "guides/awa_savadogo.jpg",
+      "description": "Elle guide les visites du village de Tiébélé, célèbre pour son architecture kassena. Elle explique la symbolique des fresques et l'organisation sociale du village."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 18,
+    "fields": {
+      "nom": "Sorgho",
+      "prenom": "Daniel",
+      "telephone": "62990011",
+      "email": "d.sorgho@example.com",
+      "photo": "guides/daniel_sorgho.jpg",
+      "description": "Guide pour les excursions vers la Mare aux Crocodiles Sacrés de Bazoulé. Il raconte les mythes et légendes associés à ces animaux."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 19,
+    "fields": {
+      "nom": "Ouedraogo",
+      "prenom": "Issouf",
+      "telephone": "58112233",
+      "email": "i.ouedraogo@example.com",
+      "photo": "guides/issouf_ouedraogo.jpg",
+      "description": "Spécialiste de la faune et de l'ornithologie, il propose des circuits d'observation des oiseaux et des animaux dans les réserves naturelles."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 20,
+    "fields": {
+      "nom": "Traoré",
+      "prenom": "Lassina",
+      "telephone": "75334455",
+      "email": "l.traore@example.com",
+      "photo": "guides/lassina_traore.jpg",
+      "description": "Guide pour les tours historiques dans la ville de Gaoua et les environs. Il connaît les traditions locales et l'histoire des peuples Lobi."
+    }
+  },
+  {
+    "model": "gestion_cycle.guide",
+    "pk": 21,
+    "fields": {
+      "nom": "Zongo",
+      "prenom": "Marie-Claire",
+      "telephone": "67445566",
+      "email": "mc.zongo@example.com",
+      "photo": "guides/marie_claire_zongo.jpg",
+      "description": "Guide axée sur le tourisme durable et solidaire. Elle collabore avec des coopératives locales et des projets communautaires."
+    }
+  }
+]

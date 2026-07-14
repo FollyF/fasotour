@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c9dda918a01241295614f5475f3ffb2 {
+                    position: relative;
+                    width: 250.0px;
+                    height: 200.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6c9dda918a01241295614f5475f3ffb2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c9dda918a01241295614f5475f3ffb2 = L.map(
+                "map_6c9dda918a01241295614f5475f3ffb2",
+                {
+                    center: [12.3685, -1.5302],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7b4b1e90b99afb17b1cce0cc0086544 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c7b4b1e90b99afb17b1cce0cc0086544.addTo(map_6c9dda918a01241295614f5475f3ffb2);
+        
+    
+            var marker_2b1806ee522be092fc11c349be4aedbd = L.marker(
+                [12.3685, -1.5302],
+                {
+}
+            ).addTo(map_6c9dda918a01241295614f5475f3ffb2);
+        
+    
+            var icon_0ed2a25b934cdf53ca0c338a0eff2ab5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_114097020e961d3669e624dcd5595786 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e84a83b8b7c236e2cfb5d6ba35a8142d = $(`<div id="html_e84a83b8b7c236e2cfb5d6ba35a8142d" style="width: 100.0%; height: 100.0%;">Village Artisanal de Ouagadougou (VAO)</div>`)[0];
+                popup_114097020e961d3669e624dcd5595786.setContent(html_e84a83b8b7c236e2cfb5d6ba35a8142d);
+            
+        
+
+        marker_2b1806ee522be092fc11c349be4aedbd.bindPopup(popup_114097020e961d3669e624dcd5595786)
+        ;
+
+        
+    
+    
+            marker_2b1806ee522be092fc11c349be4aedbd.bindTooltip(
+                `<div>
+                     Village Artisanal de Ouagadougou (VAO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2b1806ee522be092fc11c349be4aedbd.setIcon(icon_0ed2a25b934cdf53ca0c338a0eff2ab5);
+            
+    
+            var marker_9a1fbb91b03ce69764a3ab19cb26b219 = L.marker(
+                [12.375, -1.533],
+                {
+}
+            ).addTo(map_6c9dda918a01241295614f5475f3ffb2);
+        
+    
+            var icon_5f4e98e795444ba59e522f74c45c2477 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_336adb36c8f001a7c6aa62cb886e9645 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6739bdf070450b92ad940f844afe11e1 = $(`<div id="html_6739bdf070450b92ad940f844afe11e1" style="width: 100.0%; height: 100.0%;">Salon international de l'artisanat de Ouagadougou (SIAO)</div>`)[0];
+                popup_336adb36c8f001a7c6aa62cb886e9645.setContent(html_6739bdf070450b92ad940f844afe11e1);
+            
+        
+
+        marker_9a1fbb91b03ce69764a3ab19cb26b219.bindPopup(popup_336adb36c8f001a7c6aa62cb886e9645)
+        ;
+
+        
+    
+    
+            marker_9a1fbb91b03ce69764a3ab19cb26b219.bindTooltip(
+                `<div>
+                     Salon international de l'artisanat de Ouagadougou (SIAO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a1fbb91b03ce69764a3ab19cb26b219.setIcon(icon_5f4e98e795444ba59e522f74c45c2477);
+            
+    
+            var marker_95f0c24d747e349b34979bb838a2f9df = L.marker(
+                [12.3524, -1.5218],
+                {
+}
+            ).addTo(map_6c9dda918a01241295614f5475f3ffb2);
+        
+    
+            var icon_51b4d9137c294bf4994d05b57e201d8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54362b14ab312a99b133a94a789e3c9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79249e766de1f7d7994c4e5844a00d5b = $(`<div id="html_79249e766de1f7d7994c4e5844a00d5b" style="width: 100.0%; height: 100.0%;">Musée National du Burkina Faso</div>`)[0];
+                popup_54362b14ab312a99b133a94a789e3c9f.setContent(html_79249e766de1f7d7994c4e5844a00d5b);
+            
+        
+
+        marker_95f0c24d747e349b34979bb838a2f9df.bindPopup(popup_54362b14ab312a99b133a94a789e3c9f)
+        ;
+
+        
+    
+    
+            marker_95f0c24d747e349b34979bb838a2f9df.bindTooltip(
+                `<div>
+                     Musée National du Burkina Faso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_95f0c24d747e349b34979bb838a2f9df.setIcon(icon_51b4d9137c294bf4994d05b57e201d8f);
+            
+    
+            var marker_f00e23c91e47d9f36fe47089d7f92b34 = L.marker(
+                [12.365, -1.272],
+                {
+}
+            ).addTo(map_6c9dda918a01241295614f5475f3ffb2);
+        
+    
+            var icon_8accd4c337f3910e7f869a771b098296 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ae557af7b978eb575f229f3090cdca8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21335bde20e97b15b4584f52a5e98e36 = $(`<div id="html_21335bde20e97b15b4584f52a5e98e36" style="width: 100.0%; height: 100.0%;">Site de sculptures de Laongo</div>`)[0];
+                popup_5ae557af7b978eb575f229f3090cdca8.setContent(html_21335bde20e97b15b4584f52a5e98e36);
+            
+        
+
+        marker_f00e23c91e47d9f36fe47089d7f92b34.bindPopup(popup_5ae557af7b978eb575f229f3090cdca8)
+        ;
+
+        
+    
+    
+            marker_f00e23c91e47d9f36fe47089d7f92b34.bindTooltip(
+                `<div>
+                     Site de sculptures de Laongo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f00e23c91e47d9f36fe47089d7f92b34.setIcon(icon_8accd4c337f3910e7f869a771b098296);
+            
+    
+            var marker_b4617d32c0eeb4991d2bf9081bfee681 = L.marker(
+                [11.1783, -4.2985],
+                {
+}
+            ).addTo(map_6c9dda918a01241295614f5475f3ffb2);
+        
+    
+            var icon_51b36e97d0f954d45544192b6104ebe0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_384b76582473613cd88f3152df53ee3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c99be512625ed4251ab068306611e84d = $(`<div id="html_c99be512625ed4251ab068306611e84d" style="width: 100.0%; height: 100.0%;">Grande Mosquée de Dioulassoba</div>`)[0];
+                popup_384b76582473613cd88f3152df53ee3e.setContent(html_c99be512625ed4251ab068306611e84d);
+            
+        
+
+        marker_b4617d32c0eeb4991d2bf9081bfee681.bindPopup(popup_384b76582473613cd88f3152df53ee3e)
+        ;
+
+        
+    
+    
+            marker_b4617d32c0eeb4991d2bf9081bfee681.bindTooltip(
+                `<div>
+                     Grande Mosquée de Dioulassoba
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4617d32c0eeb4991d2bf9081bfee681.setIcon(icon_51b36e97d0f954d45544192b6104ebe0);
+            
+    
+            var poly_line_eff5b4079a99e9e10d9844861aa8e0c2 = L.polyline(
+                [[12.3685, -1.5302], [12.375, -1.533], [12.3524, -1.5218], [12.365, -1.272], [11.1783, -4.2985]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_6c9dda918a01241295614f5475f3ffb2);
+        
+</script>
+</html>

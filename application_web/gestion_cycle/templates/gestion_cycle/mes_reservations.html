@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Mes Réservations{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h3 class="mb-3">Mes réservations</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Circuit</th>
+                <th>Nombre de personnes</th>
+                <th>Date de réservation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in reservations %}
+            <tr>
+                <td>{{ r.circuit.nom }}</td>
+                <td>{{ r.nombre_personnes }}</td>
+                <td>{{ r.date_reservation|date:"d/m/Y H:i" }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">Vous n’avez aucune réservation.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
