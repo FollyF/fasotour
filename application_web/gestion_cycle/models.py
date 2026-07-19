@@ -9,40 +9,38 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', "scripts"))
 from scripts.folium_utils import folium_to_png
 import os, time
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 from django.conf import settings
 
+import cloudinary.uploader
+
 def folium_to_png(map_obj, filename="circuit_preview.png"):
-    """
-    Génère un PNG statique à partir d'une carte Folium
-    et retourne le chemin relatif (pour {% static %}).
-    """
-    # 1. Sauvegarde temporaire HTML
     temp_html = os.path.join(settings.BASE_DIR, "temp_map.html")
     map_obj.save(temp_html)
 
-    # 2. Configurer Firefox headless
-    firefox_options = Options()
-    firefox_options.add_argument("--headless")
-    driver = webdriver.Firefox(options=firefox_options)
+    chrome_options = Options()
+    chrome_options.binary_location = "/usr/bin/chromium"
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-gpu")
 
-    # 3. Ouvrir le fichier HTML
-    driver.set_window_size(800, 600)  # taille image finale
+    driver = webdriver.Chrome(options=chrome_options)
+    driver.set_window_size(600, 400)
     driver.get("file://" + temp_html)
+    time.sleep(2)
 
-    time.sleep(2)  # attendre rendu Leaflet
-
-    # 4. Sauvegarder screenshot dans static/maps/
-    output_dir = os.path.join(settings.BASE_DIR, "gestion_cycle", "static", "maps")
-    os.makedirs(output_dir, exist_ok=True)
-
-    output_path = os.path.join(output_dir, filename)
-    driver.save_screenshot(output_path)
-
+    # Sauvegarde temporaire locale (juste le temps de l'upload)
+    temp_png = os.path.join(settings.BASE_DIR, filename)
+    driver.save_screenshot(temp_png)
     driver.quit()
     os.remove(temp_html)
 
-    return f"maps/{filename}"  # chemin relatif utilisable dans {% static %}
+    # Upload vers Cloudinary
+    result = cloudinary.uploader.upload(temp_png, public_id=f"maps/{filename}")
+    os.remove(temp_png)  # nettoie le fichier temporaire local
+
+    return result["secure_url"]  # URL Cloudinary complète, utilisable directement
 
 def site_image_upload_path(instance, filename):
     return f'site_images/{instance.site.nom.replace(" ", "_")}/{filename}'
@@ -131,7 +129,7 @@ def generate_circuit_png(sender, instance, created, **kwargs):
 
         first_site = etapes.first().site
         m = folium.Map(location=[first_site.latitude, first_site.longitude],
-                       zoom_start=6, width=250, height=200)
+                       zoom_start=6, width=600, height=400)
 
         for etape in etapes:
             site = etape.site

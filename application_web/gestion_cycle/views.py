@@ -122,43 +122,6 @@ def detail_site(request, site_id):
 
 def circuits(request):
     circuits = Circuit.objects.all()
-    output_dir = os.path.join(settings.BASE_DIR, "gestion_cycle", "static", "maps")
-    os.makedirs(output_dir, exist_ok=True)
-
-    for circuit in circuits:
-        etapes = CircuitEtape.objects.filter(circuit=circuit).select_related("site")
-
-        if etapes.exists():
-            first_site = etapes.first().site
-            card_width, card_height = 600, 400
-            m = folium.Map(
-                location=[first_site.latitude, first_site.longitude],
-                zoom_start=6,
-                width=card_width,
-                height=card_height
-            )
-
-            for etape in etapes:
-                site = etape.site
-                if site.latitude and site.longitude:
-                    folium.Marker(
-                        location=[float(site.latitude), float(site.longitude)],
-                        popup=site.nom,
-                        tooltip=site.nom,
-                        icon=folium.Icon(color="red", icon="info-sign")
-                    ).add_to(m)
-
-            map_filename = f"circuit_{circuit.id}.png"
-            map_path = os.path.join(output_dir, map_filename)
-
-            if not os.path.exists(map_path):
-                circuit.map_url = folium_to_png(m, map_filename)
-            else:
-                circuit.map_url = f"maps/{map_filename}"
-
-        else:
-            circuit.map_url = None
-
     return render(request, "gestion_cycle/circuits.html", {"circuits": circuits})
 
 
