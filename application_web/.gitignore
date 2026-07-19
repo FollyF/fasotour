@@ -51,6 +51,7 @@ db.sqlite3-journal
 media/
 staticfiles/
 /static/
+gestion_cycle/media/
 
 # Migrations générées automatiquement (décommente si tu ne veux pas les versionner —
 # déconseillé en général, à garder commenté dans la plupart des cas)
