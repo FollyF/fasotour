@@ -10,7 +10,7 @@ images_dir = os.path.join('gestion_cycle', 'media', 'sites')
 # Champs obligatoires pour chaque site
 required_fields = ['nom', 'ville', 'description', 'photo', 'latitude', 'longitude']
 
-# Charger le fichier JSON
+# Charger le ficœhier JSON
 with open(json_file, 'r', encoding='utf-8') as f:
     data = json.load(f)
 

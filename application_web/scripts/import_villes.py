@@ -3,63 +3,76 @@ import os
 import sys
 import django
 
-# Ajouter le dossier parent de "application_web" au PYTHONPATH
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.append(BASE_DIR)
+# --- CONFIGURATION ROBUSTE ---
+# On récupère le répertoire du script actuel
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Définir le module settings correct
+# La racine du projet est le dossier parent du dossier 'scripts'
+project_root = os.path.dirname(script_dir)
+
+# On ajoute la racine au PYTHONPATH si ce n'est pas déjà fait
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+# Configuration de Django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "application_web.settings")
-
-# Initialiser Django
 django.setup()
 
+# Importation du modèle après django.setup()
 from gestion_cycle.models import Ville
 
-CSV_FILE = os.path.join(os.path.dirname(__file__), "bf.csv")
+CSV_FILE = os.path.join(script_dir, "bf.csv")
 
 def run():
+    if not os.path.exists(CSV_FILE):
+        print(f"❌ Erreur : Le fichier {CSV_FILE} est introuvable.")
+        return
+
     created_count = 0
     updated_count = 0
 
-    print("📌 Importation des villes depuis bf.csv...")
+    print(f"📌 Importation des villes depuis {CSV_FILE}...")
 
     with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            # Convertir latitude et longitude en float si possible
             try:
-                lat = float(row["lat"]) if row["lat"] else None
-                lng = float(row["lng"]) if row["lng"] else None
+                # Gestion sécurisée des nombres
+                lat_str = row.get("lat")
+                lng_str = row.get("lng")
+                
+                lat = float(lat_str) if lat_str else None
+                lng = float(lng_str) if lng_str else None
             except ValueError:
-                print(f"⚠️ Coordonnées invalides pour la ville {row['city']}, ligne ignorée.")
+                print(f"⚠️ Coordonnées invalides pour {row.get('city', 'Inconnue')}, ligne ignorée.")
                 continue
 
             if lat is None or lng is None:
-                print(f"⚠️ Latitude ou longitude manquante pour la ville {row['city']}, ligne ignorée.")
                 continue
 
+            # Utilisation de update_or_create
             ville, created = Ville.objects.update_or_create(
                 latitude=lat,
                 longitude=lng,
                 defaults={
-                    "nom": row["city"],
+                    "nom": row.get("city"),
                     "pays": row.get("country", "Burkina Faso"),
                     "code_iso2": row.get("iso2", "BF"),
                     "region": row.get("admin_name") or None,
                     "statut": row.get("capital") or None,
-                    "population": int(row["population"]) if row["population"] else None,
-                    "population_propre": int(row["population_proper"]) if row["population_proper"] else None,
+                    "population": int(row["population"]) if row.get("population") else None,
+                    "population_propre": int(row["population_proper"]) if row.get("population_proper") else None,
                 }
             )
 
             if created:
                 created_count += 1
-                print(f"✅ Ville créée : {row['city']}")
+                print(f"✅ Ville créée : {row.get('city')}")
             else:
                 updated_count += 1
-                print(f"🔄 Ville mise à jour : {row['city']}")
+                print(f"🔄 Ville mise à jour : {row.get('city')}")
 
-    print(f"\n📊 Import terminé ! {created_count} villes créées, {updated_count} villes mises à jour.")
+    print(f"\n📊 Import terminé ! {created_count} créées, {updated_count} mises à jour.")
 
 if __name__ == "__main__":
     run()
