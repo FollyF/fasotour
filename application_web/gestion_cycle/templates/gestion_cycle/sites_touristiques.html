@@ -89,7 +89,9 @@
 </style>
 
 <div class="container my-5">
-    <h1 class="text-center mb-4"></h1>
+    <h1 class="text-center mb-4">Nos sites touristiques</h1>
+    
+    {% if sites %}
     <div class="card-grid">
         {% for site in sites %}
         <div class="card shadow-sm card-equal-height">
@@ -113,5 +115,10 @@
         </div>
         {% endfor %}
     </div>
+    {% else %}
+        <div class="alert alert-info text-center">
+            Aucun site touristique n'est disponible pour le moment.
+        </div>
+    {% endif %}
 </div>
 {% endblock %}

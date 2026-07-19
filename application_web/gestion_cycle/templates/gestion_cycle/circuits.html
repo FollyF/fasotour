@@ -90,43 +90,50 @@
 </style>
 
 <div class="container my-5">
-    <h1 class="text-center mb-4"></h1>
+    <h1 class="text-center mb-4">Nos Circuits</h1>
+    
+    {% if circuits %}
     <div class="card-grid">
         {% for circuit in circuits %}
         <div class="card shadow-sm card-equal-height">
             <div class="card-image">
                 {% if circuit.map_url %}
-                    <img src="{% static circuit.map_url %}" class="card-img-top" style="width: 100%; height: auto;">
+                    <img src="{% static circuit.map_url %}" 
+                         class="card-img-top" 
+                         alt="Carte de {{ circuit.nom|default:'ce circuit' }}" 
+                         style="width: 100%; height: auto; object-fit: cover;">
                 {% else %}
-                    <img src="{% static 'maps/placeholder.png' %}" alt="Miniature indisponible">
+                    <img src="{% static 'maps/placeholder.png' %}" 
+                         alt="Image par défaut" 
+                         class="card-img-top">
                 {% endif %}
-
             </div>
+            
             <div class="card-body">
-                <h5 class="card-title">{{ circuit.nom }}</h5>
+                <h5 class="card-title">{{ circuit.nom|default:"Circuit sans nom" }}</h5>
                 <p class="card-text">
-                    {{ circuit.description|truncatechars:80 }}
+                    {{ circuit.description|default:"Aucune description disponible."|truncatechars:80 }}
                 </p>
             </div>
+            
             <div class="button-container">
-                <!-- Bouton Afficher le circuit -->
                 <a href="{% url 'detail_circuit' circuit.id %}" class="btn btn-pharmacy-green btn-custom">
                     Afficher
                 </a>
 
-                <!-- Bouton Réserver le circuit -->
-                {% if user.is_authenticated %}
-                    <a href="{% url 'reserver_circuit' circuit.id %}" class="btn btn-danger-red btn-custom">
-                        Réservez
-                    </a>
-                {% else %}
-                    <a href="{% url 'connexion' %}?next={% url 'reserver_circuit' circuit.id %}" class="btn btn-danger-red btn-custom">
-                        Réservez
-                    </a>
-                {% endif %}
+                {% url 'reserver_circuit' circuit.id as reserver_url %}
+                <a href="{% if user.is_authenticated %}{{ reserver_url }}{% else %}{% url 'connexion' %}?next={{ reserver_url }}{% endif %}" 
+                   class="btn btn-danger-red btn-custom">
+                    Réservez
+                </a>
             </div>
         </div>
         {% endfor %}
     </div>
+    {% else %}
+        <div class="alert alert-info text-center">
+            Aucun circuit n'est disponible pour le moment.
+        </div>
+    {% endif %}
 </div>
 {% endblock %}

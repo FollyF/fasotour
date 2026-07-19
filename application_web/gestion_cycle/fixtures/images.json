@@ -1,0 +1,98 @@
+[
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 1,
+            "image": "site_images/Cascades_de_Karfigu\u00e9la/0.jpg",
+            "ordre": 0
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 1,
+            "image": "site_images/Cascades_de_Karfigu\u00e9la/1.jpg",
+            "ordre": 1
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 1,
+            "image": "site_images/Cascades_de_Karfigu\u00e9la/2.jpg",
+            "ordre": 2
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 1,
+            "image": "site_images/Cascades_de_Karfigu\u00e9la/3.jpg",
+            "ordre": 3
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 8,
+            "image": "site_images/Grande_Mosqu\u00e9e_de_Dioulassoba/0.jpg",
+            "ordre": 0
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 8,
+            "image": "site_images/Grande_Mosqu\u00e9e_de_Dioulassoba/1.jpg",
+            "ordre": 1
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 8,
+            "image": "site_images/Grande_Mosqu\u00e9e_de_Dioulassoba/2.jpg",
+            "ordre": 2
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 6,
+            "image": "site_images/D\u00f4mes_de_Fab\u00e9dougou/0.jpg",
+            "ordre": 0
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 6,
+            "image": "site_images/D\u00f4mes_de_Fab\u00e9dougou/1.jpg",
+            "ordre": 1
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 6,
+            "image": "site_images/D\u00f4mes_de_Fab\u00e9dougou/2.jpg",
+            "ordre": 2
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 6,
+            "image": "site_images/D\u00f4mes_de_Fab\u00e9dougou/3.jpg",
+            "ordre": 3
+        }
+    },
+    {
+        "model": "gestion_cycle.siteimage",
+        "fields": {
+            "site": 5,
+            "image": "site_images/Mare_aux_hippopotames/0.jpg",
+            "ordre": 0
+        }
+    }
+]
